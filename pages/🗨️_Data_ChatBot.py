@@ -59,12 +59,6 @@ def load_file_data_source(uploaded_file):
         st.session_state['ready'] = True
         return df
 
-# Set default values
-if 'ds_type_sf' not in st.session_state:
-    st.session_state.ds_type_sf = True
-
-if 'ready' not in st.session_state:
-    st.session_state.ready = False
 
 # Show sidebar UI
 with st.sidebar:
@@ -73,7 +67,7 @@ with st.sidebar:
     if data_source_type == '❄️ Snowflake':
         st.session_state.ds_type_sf = True
         
-        df = load_sf_data_source()
+        st.session_state.df = load_sf_data_source()
 
     else:
         st.session_state.ds_type_sf = False
@@ -83,7 +77,7 @@ with st.sidebar:
     # Show file upload UI
     if not st.session_state.ds_type_sf:
         uploaded_file = st.file_uploader('Upload a CSV File', type='csv')
-        df = load_file_data_source(uploaded_file)
+        st.session_state.df = load_file_data_source(uploaded_file)
 
 
 open_ai_key = st.secrets['api_key']["open_ai_key"]
