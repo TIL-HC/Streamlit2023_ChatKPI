@@ -1,0 +1,6 @@
+llama_index==0.6.0
+pandas==2.0.1
+plotly==5.14.1
+snowflake_connector_python==3.0.3
+streamlit==1.22.0
+streamlit_chat==0.0.2.2
