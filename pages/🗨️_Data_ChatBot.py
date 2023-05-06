@@ -24,8 +24,6 @@ st.markdown("Type a question in the box below and hit submit to ask the AI bot a
 
 st.divider()
 
-st.dataframe(st.session_state.df)
-
 open_ai_key = st.secrets['api_key']["open_ai_key"]
 os.environ['OPENAI_API_KEY'] = open_ai_key
 
