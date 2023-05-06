@@ -1,7 +1,6 @@
 import streamlit as st
 from snowflake.connector import connect
 import pandas as pd
-import time
 import chart_funcs as cf
 
 #Set page configuration

@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_chat import message
-import pandas as pd
 import os
 from langchain import LLMChain, OpenAI
 from langchain.agents import AgentExecutor, Tool, ZeroShotAgent
