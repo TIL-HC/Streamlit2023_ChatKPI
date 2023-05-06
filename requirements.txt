@@ -4,4 +4,4 @@ plotly==5.14.1
 snowflake_connector_python==3.0.3
 streamlit==1.22.0
 streamlit_chat==0.0.2.2
-pyarrow=10.0.1
+pyarrow==10.0.1
