@@ -11,7 +11,9 @@ st.set_page_config(
 
 #set page title
 st.title("📊 Dashboard Analysis")
-st.markdown("Analyse your data by customising the dashboard's chart types and fields")
+st.markdown("Analyse your data by customising the dashboard's chart types and fields. \
+            Currently data is loaded directly from a Snowflake table for demo purposes. You can upload your own data in csv \
+            format using the dropdown on the sidebar.")
 st.divider()
 
 #Create Streamlit containers
